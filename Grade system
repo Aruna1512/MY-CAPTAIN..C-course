@@ -1,0 +1,29 @@
+//grade calculation based on mark...code developed by MUTHUARUNA.C
+#include<stdio.h>
+int main()
+{
+   int mark;
+   printf("enter mark from 1 to 100");
+   scanf("%d",&mark);
+   if(mark<=100)&&(mark>=85)
+   {
+      printf("A grade");
+   }
+   else if(mark<=84)&&(mark>=70)
+   {
+      printf("B grade");
+   }
+   else if(mark<=69)&&(mark>=55)
+   {
+      printf("C grade");
+   }
+   else if(mark<=54)&&(mark>=40)
+   {
+      printf("D grade");
+   }
+   else
+   {
+      printf("F grade");
+   }
+   return 0;
+}
