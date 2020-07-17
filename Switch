@@ -1,0 +1,32 @@
+// using switch case to print your choice
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("THE MENU");
+    printf("1.Pizza\n 2.Burger\n 3.Pasta\n 4.Frenchfries\n 5.Sandwich");
+    printf("enter your choice as n');
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+             printf("Food item:Pizza\n Price:239");
+             break;
+        case 2:
+             printf("Food item:Burger\n Price:129");
+             break;
+        case 3:
+             printf(" Food item:Pasta\n Price:179");
+             break;
+        case 4:
+             printf("Food item:French fries\n Price:99");
+             break;
+        case 5:
+             printf("Food item:Sandwich\n price:149");
+             break;
+        default:
+             printf("invalid");
+        }
+        return 0;
+}
+      
