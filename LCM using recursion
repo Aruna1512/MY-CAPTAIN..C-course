@@ -1,0 +1,23 @@
+//lcm using recursion
+#include<stdio.h>
+int LCM(int a,int b)
+int main()
+{
+    int a,b,result;
+    printf("enter two numbers as a,b");
+    scanf("%d %d",&a,&b)
+    result=LCM(a,b);
+    printf("LCM=%d,result);
+    return 0;
+}
+int LCM(int a,int b)
+{
+     static int common=1;
+     if(common%a==0)&&(common%b==0)
+     {
+           return common;
+     }
+     common++;
+     LCM (a,b);
+     return common;
+}
