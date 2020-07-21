@@ -1,0 +1,23 @@
+//sum of digit using recursion function
+#include<stdio.h>
+int sum (int n);
+int main()
+{
+    int n,result;
+    printf("enter number as n");
+    scanf("%d",&n);
+    result=sum(n);
+    printf("the sum of %d is=%d",n,result);
+    return 0;
+}
+int sum(int n)
+{
+     if(n!=0)
+     {
+         return(num%10+sum(num/10));
+     }
+     else
+     {
+         return 0;
+      }
+}
