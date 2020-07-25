@@ -1,0 +1,30 @@
+//To print employe details using structure
+#include<stdio.h>
+struct employee
+{
+     char name[20];
+     int age;
+     int mobnum[10];
+     int salary;
+};
+int main()
+{
+     int i,n;
+     struct employee*e[10];
+     printf("enter n");
+     scanf("%d",&n);
+     for(i=1;i<=n;i++)
+     {
+          printf("enter employe name");
+          scanf("%s",&e[i]->name);
+          printf("enter employe age");
+          scanf("%d",&e[i]->age);
+          printf("enter employe mobile number");
+          scanf("%d",&e[i]->mobnum);
+          printf("enter employe salary");
+          scanf("%d",&e[i]->salary);
+          printf("employee name=%s\n age=%d\n mobile number=%d\n salary=%d",e[i]->name,e[i]->age,e[i]->mobnum,e[i]->salary);
+    }
+    return 0;
+}
+     
