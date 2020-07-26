@@ -1,0 +1,31 @@
+//program for copy data fron one file to another
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    FILE*fb1,*fb2;
+    int ch;
+    char filename1[20],filename2[20];
+    printf("enter the source file name");
+    gets(filename1);
+    printf("enter destination file name");
+    gets(filename2);
+    if((fb1=fopen(filename1,"r"))==0)
+    {
+        printf("couldn't open the file");
+    }
+    if((fb2=fopen(filename2,"w"))==0)
+    {
+        printf("couldn't open the file");
+    }
+    ch=fgetc(fp1);
+    while(ch!=EOF)
+    {
+        putc(ch,fp2);
+        ch=fgetc(fp1);
+    }
+    printf("file copied");
+    fclose(fp1);
+    fclose(fp2);
+    return 0;
+}
