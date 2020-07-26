@@ -1,0 +1,32 @@
+Program for reverse a string in a file
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+     file*fp;
+     char data[50];
+     fp=fopen("test.c","w");
+     if(fp=NULL)
+     {
+          printf("couldn't open the file");
+     }
+     while(fgets(data,50,dp)!=NULL)
+     printf("%s",data);
+     int i,j,n;
+     i=0;
+     while(data [i]!="\0")
+     {
+          i++;
+     }
+     printf("length=%d",i);
+     end=i-1;
+     j=0;
+     for(i=end;i>=0;i--)
+     {
+         rdata[j]=data[i];
+         j++;
+     }
+     fclose(fp);
+     return 0;
+}
+     
